@@ -1,0 +1,68 @@
+.container{
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  /* 抵銷最左邊和最右邊的 col 多出來的 padding */
+  margin-left: -12px;
+  margin-right: -12px;
+}
+/* 一個元素佔 3 欄，格線系統總共是 12 欄 */
+.col-3{
+  width: 25%;
+  padding: 0 12px;
+}
+
+.p-4{
+  padding: 24px;
+}
+.py-4{
+  padding: 24px 0;
+}
+.pe-0{
+  padding-right: 0px;
+}
+.mb-1{
+  margin-bottom: 4px;
+}
+
+
+.d-flex{
+  display: flex;
+}
+.flex-column{
+  flex-direction: column;
+}
+.align-items-center{
+  align-items: center;
+}
+.align-items-end{
+  align-items: flex-end;
+}
+.justify-content-between{
+  justify-content: space-between;
+}
+.justify-content-center{
+  justify-content: center;
+}
+
+.gap-4{
+  gap: 16px;
+}
+
+.text-end{
+  text-align: right;
+}
+.h-100{
+  height: 100%;
+}
+
+.bg-primary-default{
+  background: $primary-default;
+}
+.bg-primary-darken{
+  background: $primary-darken;
+}

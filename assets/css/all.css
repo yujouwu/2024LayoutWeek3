@@ -1,0 +1,288 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0");
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.text-primary-default {
+  color: #AA0601;
+}
+
+.text-primary-darken {
+  color: #650300;
+}
+
+.text-primary-lighten {
+  color: #FBF2F2;
+}
+
+.text-secondary-100 {
+  color: #F2F2F2;
+}
+
+.text-secondary-200 {
+  color: #707070;
+}
+
+.text-secondary-300 {
+  color: #555555;
+}
+
+.text-secondary-400 {
+  color: #495057;
+}
+
+.text-secondary-500 {
+  color: #212529;
+}
+
+.text-secondary-600 {
+  color: #0A0A0A;
+}
+
+.text-dark {
+  color: #000000;
+}
+
+.text-light {
+  color: #FFFFFF;
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  /* 抵銷最左邊和最右邊的 col 多出來的 padding */
+  margin-left: -12px;
+  margin-right: -12px;
+}
+
+/* 一個元素佔 3 欄，格線系統總共是 12 欄 */
+.col-3 {
+  width: 25%;
+  padding: 0 12px;
+}
+
+.p-4 {
+  padding: 24px;
+}
+
+.py-4 {
+  padding: 24px 0;
+}
+
+.pe-0 {
+  padding-right: 0px;
+}
+
+.mb-1 {
+  margin-bottom: 4px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.align-items-end {
+  align-items: flex-end;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.gap-4 {
+  gap: 16px;
+}
+
+.text-end {
+  text-align: right;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.bg-primary-default {
+  background: #AA0601;
+}
+
+.bg-primary-darken {
+  background: #650300;
+}
+
+.fs-4 {
+  font-size: 14px;
+}
+
+.fs-3 {
+  font-size: 18px;
+}
+
+.fs-2 {
+  font-size: 20px;
+}
+
+.fs-1 {
+  font-size: 24px;
+}
+
+.h5 {
+  font-size: 32px;
+}
+
+.h4 {
+  font-size: 36px;
+}
+
+.h3 {
+  font-size: 42px;
+}
+
+.h2 {
+  font-size: 48px;
+}
+
+.h1 {
+  font-size: 64px;
+}
+
+.fw-bold {
+  font-weight: bold;
+}
+
+.ff-roboto {
+  font-family: "Roboto", sans-serif;
+}
+
+.ff-noto-sans {
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  outline: 1px solid blue;
+}
+
+body {
+  font-family: "Roboto", "Noto Sans TC", sans-serif;
+  line-height: 1.5;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.btn {
+  padding: 6px 12px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary-default {
+  background: #AA0601;
+  color: #FFFFFF;
+}
+.btn-primary-default:hover {
+  background: #650300;
+}
+
+.logo-link {
+  background: url("/assets/images/logo-white.png") no-repeat center/contain;
+  width: 80px;
+  height: 49px;
+  display: block;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.banner {
+  background: url("/assets/images/home-header.png") no-repeat center/cover;
+  height: 787px;
+}
+
+.index-title {
+  font-size: 100px;
+}/*# sourceMappingURL=all.css.map */

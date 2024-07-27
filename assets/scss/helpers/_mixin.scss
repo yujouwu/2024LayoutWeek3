@@ -1,0 +1,21 @@
+@mixin lg {
+  @media (max-width: 992px) {
+    @content;
+  }
+}
+@mixin md {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+@mixin sm {
+  @media (max-width: 576px) {
+    @content;
+  }
+}
+@mixin hideText {
+  display: block;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+}

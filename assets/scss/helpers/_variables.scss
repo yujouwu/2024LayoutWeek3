@@ -1,0 +1,36 @@
+$primary-default: #AA0601;
+$primary-darken: #650300;
+$primary-lighten: #FBF2F2;
+
+$secondary-100: #F2F2F2;
+$secondary-200: #707070;
+$secondary-300: #555555;
+$secondary-400: #495057;
+$secondary-500: #212529;
+$secondary-600: #0A0A0A;
+
+
+$dark: #000000;
+$light: #FFFFFF;
+
+$theme-colors: (
+  // key, value
+  "primary-default": $primary-default,
+  "primary-darken": $primary-darken,
+  "primary-lighten": $primary-lighten,
+
+  "secondary-100": $secondary-100,
+  "secondary-200": $secondary-200,
+  "secondary-300": $secondary-300,
+  "secondary-400": $secondary-400,
+  "secondary-500": $secondary-500,
+  "secondary-600": $secondary-600,
+
+  "dark": $dark,
+  "light": $light,
+);
+@each $key, $value in $theme-colors{
+  .text-#{$key} {
+    color: $value;
+  }
+}
