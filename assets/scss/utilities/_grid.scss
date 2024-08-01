@@ -14,17 +14,6 @@ $columns-num: 12;
   }
 }
 
-.content{
-  max-width: 1320px;
-  @include lg{
-    max-width: 720px;
-  }
-  @include sm{
-    max-width: 372px;
-  }
-}
-
-
 .row{
   display: flex;
   flex-wrap: wrap;
@@ -32,12 +21,7 @@ $columns-num: 12;
   margin-left: calc(-1 * $gap / 2);
   margin-right: calc(-1 * $gap / 2);
 }
-/* 一個元素佔 3 欄，格線系統總共是 12 欄 */
-// .col-3{
-//   width: 25%;
-//   padding-left: $gap / 2;
-//   padding-right: $gap / 2;
-// }
+
 
 @include generate-cols('col', $columns-num, $gap);
 @include lg {

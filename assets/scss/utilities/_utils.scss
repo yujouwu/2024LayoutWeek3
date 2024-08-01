@@ -1,6 +1,4 @@
-.lh-0{
-  line-height: 0;
-}
+// spacing 
 .p-1{
   padding: 4px;
 }
@@ -10,11 +8,9 @@
 .p-6{
   padding: 24px;
 }
-
 .py-8{
   padding: 32px 0;
 }
-
 .px-3{
   padding-left: 12px;
   padding-right: 12px;
@@ -108,12 +104,16 @@
 .mb-18{
   margin-bottom: 72px;
 }
+
+// layout
+// display
 .d-block{
   display: block;
 }
 .d-flex{
   display: flex;
 }
+// flex 
 .flex-column{
   flex-direction: column;
 }
@@ -132,7 +132,7 @@
 .justify-content-center{
   justify-content: center;
 }
-
+// gap
 .gap-2{
   gap: 8px;
 }
@@ -145,8 +145,19 @@
 .row-gap-20{
   row-gap: 80px;
 }
+// size
+.h-100{
+  height: 100%;
+}
+.w-100{
+  width: 100%;
+}
+.w-50{
+  width: 50%;
+}
 
-
+// typography
+// text align 
 .text-end{
   text-align: right;
 }
@@ -159,17 +170,14 @@
 .text-start{
   text-align: left;
 }
+// line height 
+.lh-0{
+  line-height: 0;
+}
 
 
-.h-100{
-  height: 100%;
-}
-.w-100{
-  width: 100%;
-}
-.w-50{
-  width: 50%;
-}
+
+// background 
 .bg-img{
   background-position: center;
   background-repeat: no-repeat;
@@ -191,9 +199,7 @@
   background: transparent;
 }
 
-// .border {
-//   border: 1px solid #DEE2E6;
-// }
+// border 
 .border-right-secondary{
   border-right: 1px solid $secondary-300;
 }
@@ -207,11 +213,15 @@
   box-shadow: 0px 2px 6px #00000029;
 }
 
-.icon-lg{
-  font-size: 100px;
-  color: $primary-darken;
-}
+
 @include lg{
+  .mx-lg-n3{
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+  .mb-lg-6{
+    margin-bottom: 24px;
+  }
   .flex-lg-column{
     flex-direction: column;
   }
@@ -227,15 +237,9 @@
   .row-gap-lg-10{
     row-gap: 40px;
   }
-  .mx-lg-n3{
-    margin-left: -12px;
-    margin-right: -12px;
-  }
-  .mb-lg-6{
-    margin-bottom: 24px;
-  }
 
 }
+
 @include md{
   .px-md-3{
     padding-left: 12px;
@@ -280,6 +284,12 @@
   .gap-md-0{
     gap: 0px;
   }
+  .w-md-100{
+    width: 100%;
+  }
+  .w-md-50{
+    width: 50%;
+  }
   .fs-md-1{
     font-size: $fs-1;
   }
@@ -288,12 +298,6 @@
   }
   .fs-md-5{
     font-size: $fs-5;
-  }
-  .w-md-100{
-    width: 100%;
-  }
-  .w-md-50{
-    width: 50%;
   }
   .border-md{
     border: 1px solid white;
@@ -312,11 +316,11 @@
     padding-top: 40px;
     padding-bottom: 40px;
   }
-  .flex-sm-column{
-    flex-direction: column;
-  }
   .mb-sm-6{
     margin-bottom: 24px;
+  }
+  .flex-sm-column{
+    flex-direction: column;
   }
   .gap-sm-2{
     gap: 8px;
@@ -326,6 +330,9 @@
   }
   .row-gap-sm-6{
     row-gap: 24px;
+  }
+  .fs-sm-2{
+    font-size: $fs-2;
   }
   .fs-sm-5{
     font-size: $fs-5;

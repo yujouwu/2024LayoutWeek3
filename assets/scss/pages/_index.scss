@@ -5,6 +5,10 @@
     background-image: url('/assets/images/home-header-sm.png');
   }
 }
+.icon-lg{
+  font-size: 100px;
+  color: $primary-darken;
+}
 .cobrand{
   background-image: url('/assets/images/index-bg.png');
   @include lg{
@@ -17,6 +21,7 @@
     max-width: 336px;
   }
 }
+
 .contact-wrapper{
   max-width: 636px;
   margin: 0 auto;
