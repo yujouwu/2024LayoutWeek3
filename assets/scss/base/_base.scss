@@ -1,6 +1,6 @@
 *, *::before, *::after{
   box-sizing: border-box;
-  outline: 1px solid blue;
+  // outline: 1px solid blue;
 }
 body{
   font-family: "Roboto", "Noto Sans TC", sans-serif;
@@ -10,10 +10,6 @@ a{
   display: inline-block;
   text-decoration: none;
   color: inherit;
-  &:hover{
-    text-decoration: underline;
-    text-underline-offset: 5px;
-  }
 }
 img{
   max-width: 100%;

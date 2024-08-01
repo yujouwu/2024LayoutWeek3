@@ -7,18 +7,23 @@
 
 @import './base/reset';
 @import './helpers/variables';
-@import './helpers/utils';
 @import './helpers/mixin';
 @import './helpers/fonts';
 
 @import './base/base';
 
 @import './component/buttons';
+@import './component/form';
+@import './component/navTab';
+@import './component/pagination';
+
+@import './helpers/utils';
 
 
-
+@import './layout/grid.scss';
 @import './layout/header.scss';
 @import './layout/footer.scss';
+@import './layout/classic';
 
 
 @import './pages/index.scss';

@@ -34,3 +34,43 @@ $theme-colors: (
     color: $value;
   }
 }
+
+// $fs-4: 14px;
+// $fs-3: 18px;
+// $fs-2: 20px;
+// $fs-1: 24px;
+// $h5: 32px;
+// $h4: 36px;
+// $h3: 42px;
+// $h2: 48px;
+// $h1: 64px;
+
+$fs-1: 14px;
+$fs-2: 16px;
+$fs-3: 18px;
+$fs-4: 20px;
+$fs-5: 24px;
+$fs-6: 32px;
+$fs-7: 36px;
+$fs-8: 42px;
+$fs-9: 48px;
+$fs-10: 64px;
+
+$font-size: (
+  "fs-1": $fs-1,
+  "fs-2": $fs-2,
+  "fs-3": $fs-3,
+  "fs-4": $fs-4,
+  "fs-5": $fs-5,
+  "fs-6": $fs-6,
+  "fs-7": $fs-7,
+  "fs-8": $fs-8,
+  "fs-9": $fs-9,
+  "fs-10": $fs-10,
+);
+
+@each $key, $value in $font-size{
+  .#{$key} {
+    font-size: $value;
+  }
+}
