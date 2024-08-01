@@ -25,9 +25,12 @@
   }
 }
 .tab-link{
-  padding: 24px 0;
+  padding: 24px 16px;
   width: 100%;
   cursor: pointer;
+  @include lg{
+    padding: 16px 8px;
+  }
 }
 
 .tab-content{

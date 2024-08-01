@@ -17,6 +17,18 @@
     background-image: url('/assets/images/product-header-sm-2.png');
   }
 }
+.bg-sunglasses-left{
+  background-image: url('/assets/images/product-header-3.png');
+  @include lg{
+    background-image: url('/assets/images/product-header-sm-3.png');
+  }
+}
+.bg-sunglasses-right{
+  background-image: url('/assets/images/product-header-4.png');
+  @include lg{
+    background-image: url('/assets/images/product-header-sm-4.png');
+  }
+}
 .color-tag{
   width: 24px;
   height: 24px;
